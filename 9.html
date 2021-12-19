@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Diamond</title>
+</head>
+<body>
+	<h1>Pyramid pattern </h1>
+	<h2>Output in consol</h2>
+	<style >
+		h1{
+			text-align: center;
+			color: pink;
+			background-color: yellow;
+			height: 50px;
+			
+
+		}
+		h2{
+			color: red;
+			background-color: skyblue;
+			height: 40px;
+			text-align: center;
+
+		}
+		body{
+			background-color: #9834eb;
+		}
+	</style>
+     <script type="text/javascript">
+		let n = 9;
+		let string = "";
+		// External loop
+		for (let i = 1; i <= n; i++) {
+		  // printing spaces
+		  for (let j = 1; j <= n - i; j++) {
+		    string += " ";
+		  }
+		  // printing star
+		  for (let k = 0; k < 2 * i - 1; k++) {
+		    string += "*";
+		  }
+		  string += "\n";
+		}
+		console.log(string);
+     </script>
+</body>
+</html>
